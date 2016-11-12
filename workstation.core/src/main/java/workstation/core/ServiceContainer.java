@@ -3,7 +3,7 @@ package workstation.core;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Created by Administrator on 2016/11/11.
+ * ServiceContainer
  */
 public class ServiceContainer {
     private static ConcurrentHashMap<String, Object> CACHE = new ConcurrentHashMap<String, Object>();
@@ -17,7 +17,7 @@ public class ServiceContainer {
     }
 
     public static <T> void registerInstance(Class<T> interfaceClass, Object service) {
-        CACHE.put(interfaceClass.getName(), service); 
+        CACHE.put(interfaceClass.getName(), service);
     }
 
     public static void registerInstance(String key, Object service) {
