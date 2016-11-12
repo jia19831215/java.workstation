@@ -17,7 +17,7 @@ public class ServiceContainer {
     }
 
     public static <T> void registerInstance(Class<T> interfaceClass, Object service) {
-        CACHE.put(interfaceClass.getName(), service); 
+        CACHE.put(interfaceClass.getName(), service);
     }
 
     public static void registerInstance(String key, Object service) {
