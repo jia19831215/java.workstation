@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="workstation.core:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/workstation_core_jar</output-path>
+    <root id="archive" name="workstation.core.jar">
+      <element id="module-output" name="workstation.core" />
+    </root>
+  </artifact>
+</component>
