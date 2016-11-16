@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/workstation.core/pom.xml" />
         <option value="$PROJECT_DIR$/workstation.mail/pom.xml" />
         <option value="$PROJECT_DIR$/workstation.apiclient/pom.xml" />
+        <option value="$PROJECT_DIR$/workstation.spring.util/pom.xml" />
       </list>
     </option>
   </component>

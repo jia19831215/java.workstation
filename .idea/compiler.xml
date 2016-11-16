@@ -25,12 +25,14 @@
         <module name="workstation.apiclient" />
         <module name="workstation.core" />
         <module name="workstation.mail" />
+        <module name="workstation.spring.util" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="workstation.apiclient" target="1.8" />
       <module name="workstation.core" target="1.8" />
       <module name="workstation.mail" target="1.8" />
+      <module name="workstation.spring.util" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
