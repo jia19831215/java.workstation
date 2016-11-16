@@ -6,6 +6,7 @@ import workstation.apiclient.configurations.ClientConfiguration;
 import workstation.apiclient.utils.DtoUtil;
 import workstation.core.ApplicationContext;
 import workstation.core.ServiceContainer;
+import workstation.spring.util.SpringContextUtil;
 
 import java.util.Hashtable;
 
@@ -31,7 +32,7 @@ public class ApiInvoker {
                         }
                     }
 
-                    CLIENTS.put(clientType, ServiceContainer.resolve(clientType, IApiClient.class).init(CONFIG.getApiServiceConfig().getBaseAddress(), ApplicationContext.getValue(ApiClientConstant.API_USER_ID, String.class), ApplicationContext.getValue(ApiClientConstant.API_PASSWORD, String.class), tokenUrl));
+                    CLIENTS.put(clientType, SpringContextUtil.getBean(clientType, IApiClient.class).init(CONFIG.getApiServiceConfig().getBaseAddress(), ApplicationContext.getValue(ApiClientConstant.API_USER_ID, String.class), ApplicationContext.getValue(ApiClientConstant.API_PASSWORD, String.class), tokenUrl));
                 }
             }
         }
