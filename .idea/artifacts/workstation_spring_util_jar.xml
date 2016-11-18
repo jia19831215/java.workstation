@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="workstation.spring.util:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/workstation_spring_util_jar</output-path>
+    <root id="archive" name="workstation.spring.util.jar">
+      <element id="module-output" name="workstation.spring.util" />
+    </root>
+  </artifact>
+</component>
